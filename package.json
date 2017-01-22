@@ -1,0 +1,70 @@
+{
+  "name": "usemin",
+  "version": "0.3.0",
+  "description": "Replaces references to non-optimized scripts or stylesheets into a set of HTML files (or any templates/views).",
+  "main": "usemin.js",
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsyeung/usemin.git"
+  },
+  "keywords": [
+    "usemin",
+    "html",
+    "css",
+    "optimize"
+  ],
+  "author": "Nelson Yeung (http://nelsyeung.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nelsyeung/usemin/issues"
+  },
+  "homepage": "https://github.com/nelsyeung/usemin#readme",
+  "dependencies": {
+    "clean-css": "^3.4.24",
+    "html-minifier": "^3.2.3",
+    "mkdirp": "^0.5.1",
+    "uglify-js": "^2.7.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.14.0",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "comma-dangle": [
+        "error",
+        "always"
+      ],
+      "brace-style": [
+        "error",
+        "1tbs"
+      ]
+    }
+  }
+}
