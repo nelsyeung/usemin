@@ -134,4 +134,32 @@ describe('Get Blocks', function () {
 
 		expect(blocks).to.eql(outcome);
 	});
+
+	it('should get remove block', function () {
+		var src = inputsDir + 'remove.html';
+		var content = fs.readFileSync(src).toString();
+		var blocks = getBlocks(src, content);
+		var outcome = [
+			{
+				async: false,
+				defer: false,
+				type: 'remove',
+				dest: '',
+				indent: '\t',
+				searchPath: ['',],
+				src: [
+					inputsDir + 'js/foo.js',
+					inputsDir + 'js/bar.js',
+				],
+				raw: [
+					'\t<!-- build:remove -->',
+					'\t<script src="js/foo.js"></script>',
+					'\t<script src="js/bar.js"></script>',
+					'\t<!-- endbuild -->',
+				],
+			},
+		];
+
+		expect(blocks).to.eql(outcome);
+	});
 });
