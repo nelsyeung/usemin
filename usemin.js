@@ -15,6 +15,7 @@ function usemin(filepath, dest, userConfig) {
 	var defaults = {
 		output: false,
 		configFile: false,
+		config: false,
 		htmlmin: false,
 		noprocess: false,
 		removeLivereload: false,
@@ -22,7 +23,7 @@ function usemin(filepath, dest, userConfig) {
 	var config = Object.assign(defaults, userConfig);
 	var content = fs.readFileSync(filepath).toString();
 	var blocks = getBlocks(filepath, content, config.removeLivereload);
-	var useminConfig = getConfig(config.configFile);
+	var useminConfig = getConfig(config.configFile, config.config);
 	var process = config.noprocess ? true : processBlocks(blocks, dest, useminConfig);
 	var output = getHtml(content, blocks, config.htmlmin, useminConfig);
 

@@ -35,6 +35,8 @@ Replaces references to non-optimized scripts or stylesheets into a set of HTML f
 var defaults = {
 	output: false, // HTML output path. If false, it will be printed to the console (string)
 	configFile: false, // config file path for UglifyJS, CleanCSS and HTML minifier (string)
+	config: false, // UglifyJS, CleanCSS and HTML minifier configs,
+	                  similar format to the config file (object)
 	htmlmin: false, // Whether to minify the input HTML file (Boolean)
 	noprocess: false, // Do not process files, just replace references (Boolean)
 	removeLivereload: false, // Remove livereload script (Boolean)
@@ -89,11 +91,12 @@ times it's simply cached into a variable to be passed into these API functions.)
 ]
 ```
 
-### usemin.getConfig(configFile)
+### usemin.getConfig(configFile, configOverride)
 Returns configurations object for UglifyJS, CleanCSS and HTML minifier from a config file.
 
 #### Parameters:
 *(string)* **configFile** - Config file path. (.js extension can be omitted.)
+*(object)* **configOverride** - Config object to override any previously set configs.
 
 #### returns:
 **(object)** An object of the following form:
