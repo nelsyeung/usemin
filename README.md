@@ -36,7 +36,7 @@ var defaults = {
 	output: false, // HTML output path. If false, it will be printed to the console (string)
 	configFile: false, // config file path for UglifyJS, CleanCSS and HTML minifier (string)
 	config: false, // UglifyJS, CleanCSS and HTML minifier configs,
-	                  similar format to the config file (object)
+	               // similar format to the config file (object)
 	htmlmin: false, // Whether to minify the input HTML file (Boolean)
 	noprocess: false, // Do not process files, just replace references (Boolean)
 	removeLivereload: false, // Remove livereload script (Boolean)
