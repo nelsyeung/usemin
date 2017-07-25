@@ -67,7 +67,7 @@ times it's simply cached into a variable to be passed into these API functions.)
 *(boolean)* **removeLivereload** - Whether to also extract livereload script.
 
 #### Returns:
-**(object)** An object of the following form:
+*(object)* An object of the following form:
 ```js
 [
 	{
@@ -96,10 +96,11 @@ Returns configurations object for UglifyJS, CleanCSS and HTML minifier from a co
 
 #### Parameters:
 *(string)* **configFile** - Config file path. (.js extension can be omitted.)
+
 *(object)* **configOverride** - Config object to override any previously set configs.
 
 #### returns:
-**(object)** An object of the following form:
+*(object)* An object of the following form:
 ```js
 {
 	uglifyjs: {
