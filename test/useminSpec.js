@@ -19,7 +19,7 @@ describe('Usemin', function () {
 		};
 		var useminDir = inputsDir + 'usemin/';
 		var htmlExpected = fs.readFileSync(useminDir + 'expected.html', 'utf8');
-		var cssExpected = '.bar,.foo{background:#fff}';
+		var cssExpected = '.foo{background:#fff}.bar{background:#fff}';
 		var jsExpected = 'function foo(){return"foo"}function bar(){return"bar"}foo(),bar();';
 
 		var html = usemin(src, dest, config);
