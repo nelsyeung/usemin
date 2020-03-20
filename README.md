@@ -4,7 +4,7 @@
 [![NPM Version](https://img.shields.io/npm/v/usemin.svg)](https://www.npmjs.com/package/usemin)
 [![Downloads per Month](https://img.shields.io/npm/dm/usemin.svg)](https://www.npmjs.com/package/usemin)
 
-> API version of usemin. For _purists_, those who doesn't use build tools like [Grunt](https://github.com/yeoman/grunt-usemin) and [Gulp](https://github.com/zont/gulp-usemin), but just use node as their build tool.
+> API version of usemin. For _purists_, those who don't use build tools like [Grunt](https://github.com/yeoman/grunt-usemin) and [Gulp](https://github.com/zont/gulp-usemin), but just use node as their build tool.
 
 ## Getting started
 
