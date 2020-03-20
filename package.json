@@ -29,10 +29,10 @@
     "uglify-js": "^2.7.5"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "mocha": "^3.2.0",
-    "rimraf": "^2.5.4"
+    "mocha": "^7.1.1",
+    "rimraf": "^3.0.2"
   },
   "eslintConfig": {
     "env": {
