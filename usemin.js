@@ -29,6 +29,13 @@ function usemin(filepath, dest, userConfig) {
 
 	if (process) {
 		if (config.output) {
+			try {
+				if (!fs.existsSync(dest)){
+				  fs.mkdirSync(dest)
+				}
+			  } catch (err) {
+				console.error(err)
+			  }
 			fs.writeFileSync(config.output, output);
 		}
 	} else {
